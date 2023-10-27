@@ -1,0 +1,11 @@
+name: rdemo
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - r-base
+  - r-tidyverse
+  - r-gganimate
+  - r-plotly
