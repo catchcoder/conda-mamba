@@ -1,0 +1,19 @@
+version: "4"
+services:
+  mircomamba:
+    image: rdemo
+    ports:
+      - "22:22"
+    restart: always
+    networks:
+      mamba:
+        ipv4_address: 10.80.1.11
+    volumes:
+      - /tmp/mytmp:/tmp/mytmp
+networks:
+  mamba:
+    ipam:
+      driver: default
+      config:
+        - subnet: "10.80.1.0/24"
+
