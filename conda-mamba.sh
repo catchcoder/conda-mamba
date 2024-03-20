@@ -17,7 +17,7 @@ rm -rf ~/miniconda3/miniconda.sh
 
 ~/miniconda3/bin/mamba env create -f config.yml
 
-## manual mamba create -n viz -c conda-forge -c bioconda -c R r-base r-tidyverse
+## manual mamba create -n rdemo -c conda-forge -c bioconda -c R r-base r-tidyverse
 
 # List ENV's
 
